@@ -8,5 +8,5 @@ function getBillTotal(billAmount) {
   return billAmount + tip;
 }
 
-console.log(calculateTip(56.43));
-console.log(getBillTotal(56.43));
+console.log("The tip for your bill is " + calculateTip(56.43));
+console.log("Your total bill including the tip is " + getBillTotal(56.43));
