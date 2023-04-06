@@ -20,7 +20,7 @@ function playRound(player1, player2) {
 
   if (p1hand === 'rock') {
     if (p2hand === 'rock') {
-      console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hnd: ${p2hand}\n it's a tie.`);
+      console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hand: ${p2hand}\n it's a tie.`);
       return null;
     } else if (p2hand === 'paper') {
       console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hand: ${p2hand}\n${player2.name} wins this round.`);
@@ -33,7 +33,7 @@ function playRound(player1, player2) {
 
   if (p1hand === 'paper') {
     if (p2hand === 'paper') {
-      console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hnd: ${p2hand}\n it's a tie.`);
+      console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hand: ${p2hand}\n it's a tie.`);
       return null;
     } else if (p2hand === 'scissors') {
       console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hand: ${p2hand}\n${player2.name} wins this round.`);
@@ -46,7 +46,7 @@ function playRound(player1, player2) {
 
   if (p1hand === 'scissors') {
     if (p2hand === 'scissors') {
-      console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hnd: ${p2hand}\n it's a tie.`);
+      console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hand: ${p2hand}\n it's a tie.`);
       return null;
     } else if (p2hand === 'rock') {
       console.log(`${player1.name}'s hand: ${p1hand}\n${player2.name}'s hand: ${p2hand}\n${player2.name} wins this round.`);
