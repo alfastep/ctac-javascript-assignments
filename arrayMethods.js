@@ -15,7 +15,7 @@ let lastNames = users.map(user => user.lastName);
 let elevenPlusLogins = [];
 
 users.forEach(user => {
-  if (user.logins > 10) elevenPlusLogins.push(user.lastName);
+  if (user.logins > 10) elevenPlusLogins.push(`${user.firstName} ${user.lastName}`);
 });
 
 let totalLogins = users.reduce((total, user) => total + user.logins, 0);
