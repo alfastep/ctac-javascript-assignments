@@ -12,11 +12,13 @@ const users = [
 let jose = users.find(user => user.firstName === 'Jose');
 let premiumMembers = (users.filter(user => user.isPremiumMember));
 let lastNames = users.map(user => user.lastName);
-let elevenPlusLogins = [];
+let elevenPlusLogins = users
+  .filter(user => user.logins > 10)
+  .map(user => `${user.firstName} ${user.lastName}`);
 
-users.forEach(user => {
-  if (user.logins > 10) elevenPlusLogins.push(`${user.firstName} ${user.lastName}`);
-});
+// users.forEach(user => {
+//   if (user.logins > 10) elevenPlusLogins.push(`${user.firstName} ${user.lastName}`);
+// });
 
 let totalLogins = users.reduce((total, user) => total + user.logins, 0);
 
