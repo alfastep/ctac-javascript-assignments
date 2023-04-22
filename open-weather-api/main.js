@@ -14,6 +14,7 @@ function weatherTodayHTML(weather, unit) {
   let cityH2 = document.createElement('h2');
   let dateH3 = document.createElement('h3');
   let tempH1 = document.createElement('h1');
+  let tempSpan = document.createElement('span');
   let img = document.createElement('img');
   let conditionsP = document.createElement('p');
   let tempHiLoP = document.createElement('p');
@@ -24,14 +25,18 @@ function weatherTodayHTML(weather, unit) {
   img.src = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`;
 
   if (unit === 'imperial') {
-    tempH1.innerHTML = `${temp}&#8457;`;
+    tempSpan.innerHTML = `${temp}&#8457;`;
     tempHiLoP.innerHTML = `${tempHi}&#8457; / ${tempLo}&#8457;`;
   } else {
-    tempH1.innerHTML = `${temp}&#8451;`;
+    tempSpan.innerHTML = `${temp}&#8451;`;
     tempHiLoP.innerHTML = `${tempHi}&#8451; / ${tempLo}&#8451;`;
   }
 
-  // tempH1.className = 'border-bott';
+  tempSpan.classList = 'border-bottom border-3';
+
+  resultsDiv.classList = 'col-12 text-center border rounded';
+
+  tempH1.appendChild(tempSpan);
 
   weatherTodayDiv.appendChild(cityH2);
   weatherTodayDiv.appendChild(dateH3);

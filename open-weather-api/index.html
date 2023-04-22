@@ -14,6 +14,11 @@
 </head>
 
 <body>
+  <style>
+    #results h1 {
+      font-size: 56px;
+    }
+  </style>
   <div>
     <h1 class="text-center mt-3 mb-3">Weatherman</h1>
     <div class="container">
@@ -21,20 +26,20 @@
         <div class="col-12 mt-3 mb-3 text-center">
           <form>
             <div class="form-group">
-              <input type="text" id="zipCode" name="zipCode">
+              <input type="text" class="mt-2" id="zipCode" name="zipCode">
               <!-- <label for="units">Units</label> -->
-              <select id="units">
+              <select class="mt-2" id="units">
                 <option>Celsius</option>
                 <option>Fahrenheit</option>
               </select>
-              <button class="btn btn-primary" id="submit" type="submit">Get Weather</button>
+              <button class="btn btn-primary mt-1" id="submit" type="submit">Get Weather</button>
             </div>
           </form>
         </div>
       </div>
       <hr>
       <div class="row ml-3 mr-3" id="results">
-        <div class="col-12 text-center border rounded" id="weatherToday"></div>
+        <div class="col-12 text-center" id="weatherToday"></div>
       </div>
     </div>
   </div>
